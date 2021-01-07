@@ -1,0 +1,17 @@
+<link rel="import" href="../search/dummy/nuxeo-dummy-search-form.html">
+
+<nuxeo-slot-content name="defaultSearchMenuButton" slot="DRAWER_ITEMS" priority="1" disabled>
+</nuxeo-slot-content>
+
+<nuxeo-slot-content name="dummySearchMenuButton" slot="DRAWER_ITEMS" order="4">
+<template>
+<nuxeo-menu-icon id="dummySearchButton" name="dummy_search" icon="icons:search" label="Searching...">
+</nuxeo-menu-icon>
+</template>
+</nuxeo-slot-content>
+<nuxeo-slot-content name="dummySearchMenuButtons" slot="DRAWER_PAGES">
+<template>
+<nuxeo-search-form name="dummy_search" search-name="dummy" provider="dummy_search"
+schemas="dublincore,common,uid,document"></nuxeo-search-form>
+</template>
+</nuxeo-slot-content>
